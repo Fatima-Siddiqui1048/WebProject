@@ -1,0 +1,184 @@
+  .edulink__features{
+    font-family: var(--font-family);
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature-box {
+  width: 100%;
+  max-width: 1500px;
+  margin: 2rem;
+  padding: 32px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  height: 550px;
+}
+
+.feature-box h2 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.category-buttons button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.category-buttons button.active {
+  color: #fff;
+  background-color: var(--color-button-primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.category-buttons button:not(:last-child) {
+  margin-right: 16px;
+}
+
+.institute-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.slide.hide {
+  opacity: 0;
+}
+
+.institute-box {
+  width: 25%;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.institute-box:hover{
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.institute-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.institute-box h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.institute-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-buttons button {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.arrow-buttons button:disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+@media only screen and (max-width: 700px){
+
+
+.category-buttons button{
+
+  font-size: 20px;
+}
+.institute-box {
+  width: 50%;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+}
+
+
+
+}
+
+@media only screen and (max-width: 500px){
+
+
+  .category-buttons button{
+
+    font-size: 10px;
+  }
+
+  .feature-box{
+    height: 750px;
+  }
+
+  .institute-box h3 {
+
+    font-size: 10px;
+
+  }
+
+  .institute-box p {
+
+    font-size: 8px;
+
+  }
+
+  }
+  @media only screen and (max-width: 400px){
+    .institute-box h3 {
+
+      font-size: 5px;
+
+    }
+
+    .institute-box p {
+
+      font-size: 4px;
+
+    }
+
+
+  }

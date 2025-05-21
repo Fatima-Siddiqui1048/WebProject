@@ -1,0 +1,307 @@
+.edulink__navbar {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 2rem 6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.edulink__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edulink__navbar-categories_links{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown button{
+    background: transparent !important;
+  }
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+
+.edulink__navbar-categories_links a{
+    margin: 2rem;
+    font-family: var(--font-family);
+    font-weight: 500;   
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    cursor: pointer;
+}
+.edulink__navbar-categories_links a:hover{
+    color: var(--color-button-primary);
+}
+.edulink__navbar-categories
+{
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    
+}
+.edulink__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.edulink__navbar-links_logo img {
+    width: 200px;
+    height: 70px;
+}
+
+.edulink__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.edulink__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.edulink__navbar.sticky {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    
+  }
+
+  .edulink__navbar.sticky .edulink__navbar-links a{
+    color: #000;
+  }
+
+  .edulink__navbar.sticky .edulink__navbar-links_container a[href="#institute"] {
+    color: #0085FF;
+    font-weight: 700;
+    font-size: 24px;
+    
+  }
+  .edulink__navbar.sticky .edulink__navbar-search {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin-left: 30px;
+    width: 600px;
+    font-family: var(--font-family);
+    height: 40px;
+  }
+  
+  .edulink__navbar.sticky .edulink__navbar-search input[type="text"] {
+    flex: 1;
+    width: 500px;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  .edulink__navbar.sticky .edulink__navbar-search_icon{
+    background-color: #000;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+  }
+  .edulink__navbar.sticky .edulink__navbar-search_icon svg{
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+    fill: #fff;
+  }
+  
+  .edulink__navbar.sticky .edulink__navbar-sign p{
+    color: #000;
+  }
+
+  
+.edulink__navbar-links_container p,
+.edulink__navbar-sign p,
+.edulink__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.edulink__navbar-links_container a[href="#institute"] {
+    color: #0085FF;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 30px;
+  }
+
+  .edulink__navbar-links_container a[href="#membership"] {
+    color: #ffd900;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 30px;
+  }
+  .edulink__navbar-links_container a[href="#entrytest"] {
+    color: #0085FF;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 30px;
+  }
+.edulink__navbar-sign button,
+.edulink__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #27A6F4;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 152px;
+    height: 58px;
+    z-index: 1;
+}
+
+.edulink__navbar-menu {
+    float: right;
+    margin-left: 1rem;
+
+    
+    display: none ;
+    position: relative;
+}
+
+.edulink__navbar-menu svg {
+    cursor: pointer;
+}
+
+.edulink__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.edulink__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.edulink__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .edulink__navbar-links_container {
+        display: none;
+    }
+
+    .edulink__navbar-menu {
+        display: flex;
+        z-index: 2;
+    }
+    .edulink__navbar.sticky{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .edulink__navbar {
+        padding: 2rem 4rem;
+    }
+    .edulink__navbar.sticky{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .edulink__navbar {
+        
+        padding: 2rem;
+    }
+
+    .edulink__navbar-sign {
+        display: none;
+    }
+
+    .edulink__navbar-menu_container {
+      
+        top: 20px;
+        z-index: 2;
+    }
+    .edulink__navbar.sticky{
+        display: none;
+    }
+
+    .edulink__navbar-menu_container-links-sign {
+        display: block;
+    }
+    .edulink__navbar.sticky{
+        display: none;
+    }
+}

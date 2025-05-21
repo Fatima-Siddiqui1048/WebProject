@@ -1,0 +1,289 @@
+.edulink__header {
+  font-family: var(--font-family);
+
+}
+
+.edulink__header-svg
+{
+position: absolute;
+right: 0px;
+top:0px;
+z-index: 0;
+}
+
+.edulink__header-content{
+
+background-color: transparent;
+display: flex;
+
+align-items: center;
+
+flex-direction: column;
+}
+
+.edulink__header-content h1
+{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #41BDD8 1.84%, #8C67F4 105.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: 1;
+}
+
+.searchbar{
+
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  color:white;
+  height:auto;
+
+}
+.mic_icon {
+  position: relative;
+  top: 24px;
+  right: 18rem;
+}
+.mysearch{
+  
+  background: url("../../assets/search-logo.svg") no-repeat;
+  background-position: 20px ;
+  background-color: #fff;
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 75px;
+/* identical to box height, or 341% */
+
+letter-spacing: -0.04em;
+
+color: #808080;
+
+  height: 64px;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 200px;
+  width: 740px;
+  border-radius: 20px;
+
+}
+
+.search{
+  position: relative;
+  border: none;
+  background: #27A6F4;
+  border-radius: 20px;
+  padding: 5px 22px;
+  height: 64px;
+  left: -119px;
+  color: white;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  top:10px;
+
+  color: #FFFFFF;
+}
+
+.edulink-mainhead h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 1000;
+  color: #484848;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 3rem;
+}
+
+.edulink-mainhead h1 span span {
+  background: linear-gradient(180.97deg, #41BDD8 1.84%, #8C67F4 105.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  bottom: -1em;
+  opacity: 0;
+  animation: move-text 1.2s forwards;
+}
+
+@keyframes move-text {
+    0% {
+        bottom: -0.2em;
+        opacity: 1;
+    }
+    
+    50% {
+        bottom: 0.2em;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.explore{
+
+
+  margin-top: 40px;
+    font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #C8C8C8;
+
+  }
+
+  .temp{
+
+
+    margin-top: 50px;
+    width: 60%;
+
+  }
+  .sliderimage{
+
+  height: 50%;
+
+
+
+  }
+
+  .slick-track {
+    margin:auto;
+  }
+
+  .slick-slide img {
+
+    align-self: center;
+    display: block; /* Ensure images are treated as block elements */
+    width: auto;
+    margin: 0 auto;
+    height: 90px;
+
+  }
+
+  .slick-slide {
+    padding : 0px 15px;
+  }
+
+  .myimage img{
+    height: 80px;
+    overflow: hidden;
+  }
+  .myimage{
+
+    height: 100px;
+
+    overflow: hidden;
+
+  }
+
+  .leftarrow{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    position:relative;
+    left:-40px;
+    top: -80px;
+    cursor: pointer;
+  }
+  .leftarrow:hover{
+    background-color: darkgray;
+  }
+  .rightarrow:hover{
+    background-color: darkgray;
+  }
+
+  .rightarrow{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    float: right;
+    position: relative;
+    right:-40px;
+    top:-80px;
+    cursor: pointer;
+
+
+  }
+  .slick-track{
+
+    display: inline-block;
+  }
+  .left{
+    float:left;
+    margin-right: 32px;
+    margin-top: 50px;
+  }
+  .right {
+    margin-top: 50px;
+    float: left;
+
+  }
+
+.myte{
+width: 100%;
+height: 500px;
+background-color: red;
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+.mysearch{
+  width: 400px;
+  margin-left: 50px;
+
+}
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+.searchbar{
+  margin-left: 10px;
+
+}
+.mysearch{
+  width: 400px;
+  margin-left: 50px;
+
+}
+.edulink__header-content{
+  align-items: center;
+
+
+}
+
+}
+
+
+.suggestions {
+list-style-type: none;
+padding-top: 15px;
+}
+
+.suggestions li {
+padding: 10px;
+}
+
+.suggestions li.active {
+background-color: #2a444a;
+border-radius: 10px;
+/* border-color: white; */
+}

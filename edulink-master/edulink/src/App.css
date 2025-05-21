@@ -1,0 +1,258 @@
+*{
+    margin: 0px 0px 0px 0px ;
+    padding:0px 0px 0px 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--color-bg);
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+.gradient_bg {
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    min-height: 100vh;
+  }
+
+  .gradient_text{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section_padding{
+    padding: 4rem 6rem;
+  }
+
+  .section_margin{
+    margin: 4rem 6rem;
+  }
+
+  .scale-up-center{
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  /* Tablet Devices  */
+  @media screen and (max-width: 700px) {
+    .section_padding{
+        padding: 4rem;
+      }
+
+      .section_margin{
+        margin: 4rem;
+      }
+  }
+
+  /* Mobile Devices  */
+  @media screen and (max-width: 550px) {
+    .section_padding{
+        padding: 4rem 2rem;
+      }
+
+      .section_margin{
+        margin: 4rem 2rem;
+      }
+  }
+
+
+  .temp{
+
+    width: 80%;
+
+
+  }
+  .t{
+
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: grey;
+    border: 1px solid black;
+
+   height: 700px;
+    align-items: center;
+
+
+  }
+ .t4{
+
+  border: 1px solid black;
+
+ }
+
+
+ .unitest{
+  margin-top: 100px;
+  color:black;
+  background-color: white;
+  width: 80%;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius:100px;
+ }
+
+ .universitytest{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ }
+
+.setpara{
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: 'manrope';
+
+
+}
+.unitest button{
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: white;
+  border-color: dodgerblue;
+  background-color: dodgerblue;
+
+
+}
+.unitest input{
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.setbutn{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-around;
+
+}
+.mysubmit{
+  margin-top: 10px;
+}
+.showtest{
+  display: flex;
+  justify-content: center;
+
+
+}
+.showtest1{
+  color:black;
+  background-color: white;
+  width: 80%;
+
+  padding: 20px 50px;
+}
+
+.showtest1 h2{
+  margin-top: 10px;
+
+}
+.listdec{
+
+  list-style-type: none;
+  margin-top: 20px;
+
+
+}
+.setmargin{
+  margin-left: 0px;
+
+}
+.testlis{
+  width: 90%;
+  background-color: dodgerblue;
+  margin-top: 3px;
+  border-radius: 5px;
+  padding: 15px 10px;
+  text-align: center;
+  color:white;
+  box-shadow: inset 6px 6px 6px white, inset -6px -6px 6px white;
+  transition: transform 0.3s ease;
+}
+.testlis:hover {
+  transform: scale(1.1);
+  box-shadow: inset 6px 6px 6px dodgerblue, inset -6px -6px 6px dodgerblue;
+}
+.mainques{
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+
+.allques{
+  padding: 50px 50px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: white;
+
+
+}
+.listset{
+
+  list-style-type: upper-alpha;
+}
+
+.setmargin{
+  margin-top: 15px;
+
+}
+.myli{
+  margin-left: 20px;
+}
+.pdfbutton{
+  margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: white;
+  border-color: dodgerblue;
+  background-color: dodgerblue;
+}
